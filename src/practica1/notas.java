@@ -14,7 +14,7 @@ public class notas {
     /**
      * Unidad formativa 1, 2 y 3
      */
-double nota1, uf2, uf3;
+double nota1, nota2, uf3;
     /**
      * Acumulado 1, 2 y 3
      */
@@ -52,7 +52,7 @@ public void IngresaNotas() {
 	
 	System.out.print("ingrese nota 2: ");
 	
-	uf2= entrada.nextDouble();
+	nota2= entrada.nextDouble();
 	System.out.print("ingrese nota 3: ");
 	
 	uf3= entrada.nextDouble();
@@ -76,7 +76,7 @@ public void comprobarcion(){
 		System.out.println(" nota1 correcta");
 	}
 	
-	if (uf2>10) {
+	if (nota2>10) {
 		System.out.println(" nota2 mal introducida");
 		
 	}else {
@@ -101,7 +101,7 @@ public void comprobarcion(){
 
 public void Calculonotas() {
 	acu1= nota1*0.35;
-	acu2 = uf2 * 0.35;
+	acu2 = nota2 * 0.35;
 	acu3 = uf3 * 0.30;
 	
 	def = acu1 + acu2+ acu3;
@@ -117,7 +117,7 @@ public void Mostrar() {
 	//print ln lo que hace es que al terminar el print baja la linea
 	System.out.println(" notas introducidas son:");
 	System.out.println(" nota1 = " + nota1);
-	System.out.println(" nota2 = " + uf2);
+	System.out.println(" nota2 = " + nota2);
 	System.out.println(" nota3 = " + uf3);
 	
 	System.out.println(" acumuado 1 = "+ acu1);
